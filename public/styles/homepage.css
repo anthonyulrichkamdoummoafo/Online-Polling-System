@@ -4,12 +4,15 @@ General Reset
     padding: 0;
     box-sizing: border-box;
   }
-  
   body {
     font-family: Arial, sans-serif;
     color: #ffffff;
     background-color: #f1efef;
     line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
   }
   
   .navbar {
@@ -119,5 +122,47 @@ General Reset
   .hero-image img {
     max-width: 100%;
     border-radius: 10px;
+  }
+
+
+  /* General Styles */
+
+  
+  /* Stats Section */
+  .stats-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .trusted-text {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6c63ff; /* Purple color for numbers */
+    margin: 0;
+  }
+  
+  .stat-label {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0 0;
   }
   

@@ -11,7 +11,7 @@
     <div class="logo">PulseVote</div>
     <nav>
       <ul>
-        <li><a href="#">Create Poll</a></li>
+        <li><a href="#"  id="create-poll-btn">Create Poll</a></li>
         <li><a href="#">Schedule Meeting</a></li>
         <li><a href="#">Demo</a></li>
         <li><a href="#">Pricing</a></li>
@@ -28,28 +28,35 @@
       <h1>Create a poll <br><span>in seconds</span></h1>
       <p>Want to ask your friends where to go Friday night or arrange a meeting with co-workers? Create a poll – and get answers in no time.</p>
       <div class="buttons">
-        <a href="#" class="create-poll">Create a poll</a>
+        <a href="#" class="create-poll" id="create-poll-btn">Create a poll</a>
         <a href="#" class="live-demo">Live Demo</a>
       </div>
       <p class="no-signup">No signup required</p>
     </div>
-    <div class="stats-section">
-        <p class="trusted-text">TRUSTED BY OVER 1,500,000 USERS WORLDWIDE</p>
-        <div class="stats-container">
-          <div class="stat-item">
-            <h2 class="stat-number">1.5M+</h2>
-            <p class="stat-label">Users</p>
-          </div>
-          <div class="stat-item">
-            <h2 class="stat-number">11M+</h2>
-            <p class="stat-label">Polls</p>
-          </div>
-          <div class="stat-item">
-            <h2 class="stat-number">260M+</h2>
-            <p class="stat-label">Votes</p>
-          </div>
-        </div>
-    </div>
+    
   </main>
+  <div class="stats-section">
+    <p class="trusted-text">TRUSTED BY OVER 1,500,000 USERS WORLDWIDE</p>
+    <div class="stats-container">
+      <div class="stat-item">
+        <h2 class="stat-number">1.5M+</h2>
+        <p class="stat-label">Users</p>
+      </div>
+      <div class="stat-item">
+        <h2 class="stat-number">11M+</h2>
+        <p class="stat-label">Polls</p>
+      </div>
+      <div class="stat-item">
+        <h2 class="stat-number">260M+</h2>
+        <p class="stat-label">Votes</p>
+      </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('create-poll-btn').addEventListener('click', function() {
+      window.location.href = '/createpolling.ejs';
+    });
+  </script>
 </body>
 </html>
