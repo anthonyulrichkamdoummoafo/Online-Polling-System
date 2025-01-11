@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1e1e40;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #252545;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f15bb5;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .auth-buttons .login,
+  .auth-buttons .signup {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .auth-buttons .signup {
+    background-color: #6c5ce7;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .hero-content h1 span {
+    color: #6c5ce7;
+  }
+  
+  .hero-content p {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  .buttons {
+    margin: 20px 0;
+  }
+  
+  .create-poll,
+  .live-demo {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .create-poll {
+    background-color: #6c5ce7;
+  }
+  
+  .live-demo {
+    background-color: #333;
+  }
+  
+  .no-signup {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
