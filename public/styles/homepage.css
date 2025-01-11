@@ -7,8 +7,8 @@
   
   body {
     font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #1e1e40;
+    color: #ffffff;
+    background-color: #f1efef;
     line-height: 1.6;
   }
   
@@ -16,12 +16,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background-color: #252545;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    border: 57px #000000;
   }
   
   .logo {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: bold;
     color: #f15bb5;
   }
@@ -37,20 +38,21 @@
   
   .navbar ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #747171;
     font-size: 16px;
   }
   
   .auth-buttons .login,
   .auth-buttons .signup {
     text-decoration: none;
-    color: #fff;
+    color: #747171;
     padding: 10px 20px;
     border-radius: 5px;
   }
   
   .auth-buttons .signup {
     background-color: #6c5ce7;
+    color: #fff;
   }
   
   .hero {
@@ -58,25 +60,39 @@
     justify-content: space-between;
     align-items: center;
     padding: 100px 50px;
+    margin: 30px 40px 30px 40px;
+    border-radius: 15px;
   }
+
+  /* .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 27, 114, 0.795); /* blue with 50% opacity */
+    /* border-radius: 15px;
+  } */ 
   
   .hero-content {
     max-width: 50%;
   }
   
   .hero-content h1 {
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 58px;
+    font-weight: 900;
     line-height: 1.2;
   }
   
   .hero-content h1 span {
-    color: #6c5ce7;
+    color: #747171;
   }
   
   .hero-content p {
     margin: 20px 0;
     font-size: 18px;
+    color: #747171;
   }
   
   .buttons {
@@ -104,6 +120,12 @@
     margin-top: 10px;
     font-size: 14px;
   }
+
+  /* .hero-image {
+    background-image: url('Messi.jpg');
+    background-size: cover;
+    background-position: center;
+  } */
   
   .hero-image img {
     max-width: 100%;

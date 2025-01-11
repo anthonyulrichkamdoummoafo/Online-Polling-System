@@ -5,7 +5,6 @@ const path = require('path');
 
 dotenv.config();
 const app = express();
-
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGO_URI, {
@@ -21,6 +20,7 @@ mongoose
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
+
 
 // Routes
 app.get('/', (req, res) => {
