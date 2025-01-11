@@ -11,7 +11,7 @@
     <div class="logo">PulseVote</div>
     <nav>
       <ul>
-        <li><a href="#"  id="create-poll-btn">Create Poll</a></li>
+        <li><a href="createpolling.ejs">Create Poll</a></li>
         <li><a href="#">Schedule Meeting</a></li>
         <li><a href="#">Demo</a></li>
         <li><a href="#">Pricing</a></li>
@@ -28,7 +28,7 @@
       <h1>Create a poll <br><span>in seconds</span></h1>
       <p>Want to ask your friends where to go Friday night or arrange a meeting with co-workers? Create a poll – and get answers in no time.</p>
       <div class="buttons">
-        <a href="#" class="create-poll" id="create-poll-btn">Create a poll</a>
+        <a href="createpolling.ejs" class="create-poll" >Create a poll</a>
         <a href="#" class="live-demo">Live Demo</a>
       </div>
       <p class="no-signup">No signup required</p>
@@ -53,10 +53,5 @@
     </div>
 </div>
 
-<script>
-    document.getElementById('create-poll-btn').addEventListener('click', function() {
-      window.location.href = '/createpolling.ejs';
-    });
-  </script>
 </body>
 </html>
