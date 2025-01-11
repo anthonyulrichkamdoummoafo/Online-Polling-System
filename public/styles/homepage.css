@@ -1,4 +1,4 @@
-/* General Reset */
+General Reset
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +18,20 @@
     align-items: center;
     padding: 10px 50px;
     background-color: #ffffff;
-    border: 57px #000000;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: none;
+    border-bottom: #333 solid 2px;
   }
   
   .logo {
     font-size: 34px;
     font-weight: bold;
-    color: #f15bb5;
+    color: #3e72e4;
   }
   
   .navbar ul {
@@ -60,20 +67,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 100px 50px;
-    margin: 30px 40px 30px 40px;
+    margin: 110px 40px 30px 40px;
     border-radius: 15px;
-  }
-
-  /* .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(1, 27, 114, 0.795); /* blue with 50% opacity */
-    /* border-radius: 15px;
-  } */ 
+  } 
   
   .hero-content {
     max-width: 50%;
@@ -120,13 +116,6 @@
     margin-top: 10px;
     font-size: 14px;
   }
-
-  /* .hero-image {
-    background-image: url('Messi.jpg');
-    background-size: cover;
-    background-position: center;
-  } */
-  
   .hero-image img {
     max-width: 100%;
     border-radius: 10px;
