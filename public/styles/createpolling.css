@@ -6,12 +6,75 @@ body {
     padding: 0;
   }
   
+
+ /* Navbar Section */
+  
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #ffffff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: none;
+  border-bottom: #727272 solid 0.5px;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: bold;
+  color: #3e72e4;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #747171;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+  text-decoration: none;
+  color: #747171;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.auth-buttons .signup {
+  background-color: #3e72e4;
+  color: #fff;
+}
+
+/* End Navbar Section */
+
+
+  .container-box {
+    margin: 100px auto;
+    
+  }
+
   .container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 80px auto;
     background: #fff;
     padding: 20px 30px;
-    border-radius: 8px;
+    border-radius:  8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   

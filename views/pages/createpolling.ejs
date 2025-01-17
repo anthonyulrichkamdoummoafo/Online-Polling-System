@@ -4,75 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create a Poll</title>
-  <link rel="stylesheet" href="/css/homepage.css">
+  <link rel="stylesheet" href="styles/createpolling.css">
 </head>
 <body>
-  <div class="container">
+  <header class="navbar">
+    <div class="logo">PulseVote</div>
+    <nav>
+      <ul>
+        <li><a onclick="location.href='/createpolling'">Create Poll</a></li>
+        <li><a href="#">Schedule Meeting</a></li>
+        <li><a href="#">Demo</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <a href="#" class="login">Login</a>
+      <a href="#" class="signup">Sign up</a>
+    </div>
+  </header>
+
+  <div class="container-box">
     <h1 class="title">Create a Poll</h1>
     <p class="subtitle">Complete the below fields to create your poll.</p>
-
-    <form action="/create-poll" method="POST" class="poll-form">
-      <!-- Title -->
-      <div class="form-group">
-        <label for="poll-title">Title</label>
-        <input type="text" id="poll-title" name="title" placeholder="Type your question here" required>
-        <a href="#" class="add-description">+ Add description or image</a>
-      </div>
-
-      <!-- Poll Type -->
-      <div class="form-group">
-        <label for="poll-type">Poll type</label>
-        <select id="poll-type" name="pollType">
-          <option value="multiple-choice">Multiple choice</option>
-          <option value="single-choice">Single choice</option>
-        </select>
-      </div>
-
-      <!-- Answer Options -->
-      <div class="form-group">
-        <label>Answer Options</label>
-        <div class="options">
-          <input type="text" name="option1" placeholder="Option 1" required>
-          <input type="text" name="option2" placeholder="Option 2" required>
+    <div class="container">
+      <form action="/create-poll" method="POST" class="poll-form">
+        <!-- Title -->
+        <div class="form-group">
+          <label for="poll-title">Title</label>
+          <input type="text" id="poll-title" name="title" placeholder="Type your question here" required>
+          <a href="#" class="add-description">+ Add description or image</a>
         </div>
-        <button type="button" class="add-option">+ Add option</button>
-        <a href="#" class="add-other">or Add "Other"</a>
-      </div>
 
-      <!-- Settings -->
-      <div class="settings">
-        <h3>Settings</h3>
-        <div class="setting-item">
-          <label>
-            <input type="checkbox" name="allowMultipleOptions">
-            Allow selection of multiple options
-          </label>
-        </div>
-        <div class="setting-item">
-          <label>
-            <input type="checkbox" name="requireNames">
-            Require participant names
-          </label>
-        </div>
-        <div class="setting-item">
-          <label for="voting-security">Voting security</label>
-          <select id="voting-security" name="votingSecurity">
-            <option value="ip">One vote per IP address</option>
-            <option value="cookie">One vote per browser</option>
+        <!-- Poll Type -->
+        <div class="form-group">
+          <label for="poll-type">Poll type</label>
+          <select id="poll-type" name="pollType">
+            <option value="multiple-choice">Multiple choice</option>
+            <option value="single-choice">Single choice</option>
           </select>
         </div>
-        <div class="setting-item">
-          <label>
-            <input type="checkbox" name="votingInterval">
-            Voting interval
-          </label>
-        </div>
-        <a href="#" class="advanced-settings">Show advanced settings</a>
-      </div>
 
-      <!-- Submit Button -->
-      <button type="submit" class="create-poll-btn">Create poll</button>
-    </form>
-  </div>
+        <!-- Answer Options -->
+        <div class="form-group">
+          <label>Answer Options</label>
+          <div class="options">
+            <input type="text" name="option1" placeholder="Option 1" required>
+            <input type="text" name="option2" placeholder="Option 2" required>
+          </div>
+          <button type="button" class="add-option">+ Add option</button>
+          <a href="#" class="add-other">or Add "Other"</a>
+        </div>
+
+        <!-- Settings -->
+        <div class="settings">
+          <h3>Settings</h3>
+          <div class="setting-item">
+            <label>
+              <input type="checkbox" name="allowMultipleOptions">
+              Allow selection of multiple options
+            </label>
+          </div>
+          <div class="setting-item">
+            <label>
+              <input type="checkbox" name="requireNames">
+              Require participant names
+            </label>
+          </div>
+          <div class="setting-item">
+            <label for="voting-security">Voting security</label>
+            <select id="voting-security" name="votingSecurity">
+              <option value="ip">One vote per IP address</option>
+              <option value="cookie">One vote per browser</option>
+            </select>
+          </div>
+          <div class="setting-item">
+            <label>
+              <input type="checkbox" name="votingInterval">
+              Voting interval
+            </label>
+          </div>
+          <a href="#" class="advanced-settings">Show advanced settings</a>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="create-poll-btn">Create poll</button>
+      </form>
+    </div>
+</div>
 </body>
 </html>

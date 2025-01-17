@@ -14,6 +14,8 @@ General Reset
     background-color: #f9f9f9;
     color: #333;
   }
+
+  /* Navbar Section */
   
   .navbar {
     display: flex;
@@ -28,7 +30,29 @@ General Reset
     right: 0;
     z-index: 1;
     transition: none;
-    border-bottom: #333 solid 2px;
+    border-bottom: #727272 solid 0.5px;
+  }
+
+  .underline-link {
+    position: relative;
+    text-decoration: none;
+    color: #333; /* Link color */
+  }
+
+  .underline-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the distance of the line from the text */
+    width: 100%;
+    height: 2px; /* Line thickness */
+    background-color: #007bff; /* Line color */
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+
+  .underline-link:hover::after {
+    transform: scaleX(1);
   }
   
   .logo {
@@ -50,6 +74,8 @@ General Reset
     text-decoration: none;
     color: #747171;
     font-size: 16px;
+    cursor: pointer;
+    
   }
   
   .auth-buttons .login,
@@ -61,9 +87,11 @@ General Reset
   }
   
   .auth-buttons .signup {
-    background-color: #6c5ce7;
+    background-color: #3e72e4;
     color: #fff;
   }
+
+  /* End Navbar Section */
   
   .hero {
     display: flex;
@@ -72,6 +100,7 @@ General Reset
     padding: 100px 50px;
     margin: 110px 40px 30px 40px;
     border-radius: 15px;
+    filter: contrast(150%) brightness(120%) saturate(120%) sepia(10%) hue-rotate(10deg);
   } 
   
   .hero-content {
@@ -82,6 +111,7 @@ General Reset
     font-size: 58px;
     font-weight: 900;
     line-height: 1.2;
+    color: #ffffff;
   }
   
   .hero-content h1 span {
@@ -101,18 +131,20 @@ General Reset
   .create-poll,
   .live-demo {
     text-decoration: none;
-    color: #fff;
+    font-weight: 100;
     padding: 15px 30px;
     border-radius: 5px;
     margin-right: 20px;
   }
   
   .create-poll {
-    background-color: #6c5ce7;
+    background-color: #ffffff;
+    color: #3e72e4;
   }
   
   .live-demo {
-    background-color: #333;
+    background-color: #3e72e4;
+    color: #ffffff;
   }
   
   .no-signup {
