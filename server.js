@@ -31,6 +31,10 @@ app.get('/createpolling', (req, res) => {
   res.render('pages/createpolling');
 });
 
+app.get('/login', (req, res) => {
+  res.render('pages/login');
+});
+
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
